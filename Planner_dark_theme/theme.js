@@ -3,15 +3,15 @@ $(document).ready(function() {
     $("head").append(`<style>
     .appContent,.appContent .sideNav .plannerLeftNav,.appContent .sideNav .plannerLeftNav .content,body > div > div > div.appContent > div div > div.content
     {
-        background-color: black;
+        background-color: #272727;
     }
     .leftNavStaticLinksGroup
     {
-        background-color: black;
+        background-color: #272727;
         margin: 0;
     }
     .theme-light .sideNav>.header {
-        background-color: black;
+        background-color: #272727;
         color: #ffffff;
     }
     .theme-light .sideNav>.header:focus, .theme-light .sideNav>.header:hover {
@@ -51,7 +51,7 @@ $(document).ready(function() {
     }
     .theme-light .plannerLeftNav .content .leftNavStaticLinksGroup .header,.theme-light .plannerLeftNav .content .leftNavStaticLinksGroup .header,.theme-light .plannerLeftNav .content .leftNavStaticLinksGroup .header,.theme-light .plannerLeftNav .content div .leftNavDynamicLinksGroup .header,.theme-light .plannerLeftNav .content div .leftNavDynamicLinksGroup .header,.theme-light .plannerLeftNav .content div .leftNavDynamicLinksGroup .header,.theme-light .plannerLeftNav .content div .leftNavDynamicLinksGroup .list .header,.theme-light .plannerLeftNav .content div .leftNavDynamicLinksGroup .list .header,.theme-light .plannerLeftNav .content div .leftNavDynamicLinksGroup .list .header,.theme-light .plannerLeftNav .content ul .header,.theme-light .plannerLeftNav .content ul .header,.theme-light .plannerLeftNav .content ul .header
     {
-        background-color: black;
+        background-color: #272727;
         color: white;   
     }
     .theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>li:focus, .theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>li:focus-within, .theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>li:hover, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.list>li:focus, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.list>li:focus-within, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.list>li:hover, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>li:focus, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>li:focus-within, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>li:hover, .theme-light .plannerLeftNav>.content>ul>li:focus, .theme-light .plannerLeftNav>.content>ul>li:focus-within, .theme-light .plannerLeftNav>.content>ul>li:hover {
@@ -60,7 +60,7 @@ $(document).ready(function() {
     }
     .theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>li,.theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>li,.theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>li,.theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.list>li,.theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.list>li,.theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.list>li,.theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>li,.theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>li,.theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>li,.theme-light .plannerLeftNav>.content>ul>li,.theme-light .plannerLeftNav>.content>ul>li,.theme-light .plannerLeftNav>.content>ul>li
     {
-        background-color: black;
+        background-color: #272727;
         color: white;   
     }
     .theme-light .noAccessErrorPage ::-webkit-scrollbar-thumb, .theme-light .plannerApp ::-webkit-scrollbar-thumb, .theme-light .plannerAppCallout ::-webkit-scrollbar-thumb, .theme-light .plannerAppDialog ::-webkit-scrollbar-thumb, .theme-light .sharepointApp ::-webkit-scrollbar-thumb, .theme-light .teamsApp ::-webkit-scrollbar-thumb, .theme-light .webpartApp ::-webkit-scrollbar-thumb
@@ -73,7 +73,7 @@ $(document).ready(function() {
     }
     .theme-light .boardColumn 
     {
-        background-color: #232323;
+        background-color: #383838;
     }
     .theme-light .topHeader .dropdownMenu>.ms-Label {
         color:white;
@@ -121,13 +121,20 @@ $(document).ready(function() {
     .theme-light .boardColumn>div>.columnHeader>.addButtonContainer>.addButton {
         background-color: #4c4c4c;
     }
+    .theme-light .secondarySection>.sectionToggle {
+        color: white;
+    }
+    .theme-light .secondarySection>.sectionToggle:hover
+    {
+        color:white;
+    }
     .sideNav>.content>.leftNavStaticLinksGroup>li>a>.linkContents:hover,.sideNav>.content>div>.leftNavDynamicLinksGroup>.list>li>a>.linkContents:hover,.sideNav>.content>div>.leftNavDynamicLinksGroup>li>a>.linkContents:hover,.sideNav>.content>ul>li>a>.linkContents:hover
     {
         color:black;
     }
     .theme-light .sideNav>.footer {
         color: #ffffff;
-        background-color: black;
+        background-color: #272727;
     }
     .theme-light .sideNav>.footer .chevron ,.theme-light .sideNav>.footer:hover .leftNavItem
     {
@@ -149,6 +156,22 @@ $(document).ready(function() {
     }
     .theme-light .taskCard>.container>.contentAndLabels>.textContent>.topBar>.titleRow>.title {
         color: #ffffff;
+    }
+    .topHeader>.nonIcon>div>.secondarySection>.pivotsSection>div.removable>.pivotLink.isSelected>.icon>.ms-Icon, .topHeader>.nonIcon>div>.secondarySection>.pivotsSection>div.removable>.pivotLink.isSelected>:not(.icon), .topHeader>.nonIcon>div>.secondarySection>.pivotsSection>div.removable>.pivotLink:hover>.icon>.ms-Icon, .topHeader>.nonIcon>div>.secondarySection>.pivotsSection>div.removable>.pivotLink:hover>:not(.icon) {
+        border-bottom: 2px solid #ffffff;
+        padding-bottom: 0;
+    }
+    .theme-light .topHeader>.nonIcon>div>.rightAlignedSection>.facePileArray .ms-Facepile-descriptiveOverflowButton .ms-Persona-initials>span
+    {
+        color:white;
+    }
+    html[dir=ltr] .topHeader .dropdownMenu>.dropDownIcon
+    {
+        color:white;
+    }
+    .theme-light .boardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>.columnTitle.addColumn
+    {
+        color:white;
     }
     .checkbox-container:hover .completeButtonIcon {
         color: #000000;
@@ -174,7 +197,7 @@ $(document).ready(function() {
         color: #ffffff;
     }
     .theme-light .color-inprogress {
-        color: #151878;
+        color: #80ce82;
     }
     .documentPreviewIcon.excelIconColor {
         color: #239323;
@@ -188,10 +211,34 @@ $(document).ready(function() {
         border-radius: 2em;
     }
     .theme-light .ms-Dialog-main.plannerAppDialog .plannerAppDialogContents {
-        background-color: #000000de;
+        background-color: #000000cf;
         border-radius: 1em;
     }
-    
+    .theme-light .ms-Callout.plannerAppCallout
+    {
+        background-color: transparent;
+        padding: 0;
+    }
+    .theme-light .peoplePicker>.ms-Callout-main
+    {
+        background-color: #212121e6;
+    }
+    .theme-light .peoplePicker>.ms-Callout-main>div
+    {
+        color : white;
+    }
+    [dir=ltr] .peoplePicker>.ms-Callout-main>div>.assignmentPickerTextField.ms-TextField
+    {
+        padding: 1em;
+    }
+    .theme-light .peoplePicker>.ms-Callout-main>div>.userLists>.userListSection>.userList>.user:not(.readOnly):hover .ms-Persona-primaryText
+    {
+        color : black;
+    }
+    .theme-light .peoplePicker>.ms-Callout-main>div .ms-Persona-primaryText
+    {
+        color: white;
+    }
     .theme-light .ms-TextField.isTitleStyle>.ms-TextField-wrapper>.ms-TextField-fieldGroup>input, .theme-light .ms-TextField.isTitleStyle>.ms-TextField-wrapper>.ms-TextField-fieldGroup>textarea, .theme-light .ms-TextField.isTitleStyle>.ms-TextField-wrapper>div>input, .theme-light .ms-TextField.isTitleStyle>.ms-TextField-wrapper>div>textarea {
         color: #ffffff;
     }
@@ -219,7 +266,7 @@ $(document).ready(function() {
     }
     .theme-light .taskEditor>.removeMargin>.attachments>.addAttachmentButtonWrapper>.addAttachmentButton:hover,.theme-light .commentThreadView>div>.sendCommentButton:hover
     {
-        background-color: black;
+        background-color: #272727;
     }
     .theme-light .commentThreadView>label {
         color: #ffffff;
@@ -257,6 +304,10 @@ $(document).ready(function() {
     {
         color: white;
     }
+    .theme-light .taskCard>.container>.contentAndLabels>.textContent>.topBar>.preview>.checklistPreview.rounded .checklistItem .ms-Checkbox .ms-Checkbox-label>span
+    {
+        color: #dadada;
+    }
     .theme-light .taskCard.complete>.container>.contentAndLabels>.textContent>.topBar>.titleRow>.title {
         color: #c3c3c3;
     }
@@ -264,7 +315,13 @@ $(document).ready(function() {
         color: #ffffff;
     }
     .checkbox-container>.toggleCheckLabel.checked {
-        color: #1c5d1b;
+        color: #4f6bed;
+        background-image: radial-gradient(white,#4f6bed);
+        border-radius: 50%;
+    }
+    .theme-light .taskEditor>.removeMargin>.planTitle
+    {
+        color: white;
     }
     .theme-light .taskEditor>.removeMargin>.title.completed>.edit input {
         color: #a7a7a7;
