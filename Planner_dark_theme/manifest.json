@@ -1,12 +1,19 @@
 { 
     "name": "Microsoft Planner Dark Theme", 
     "manifest_version": 2,
-    "version": "1.1", 
-    "description": "Switch to dark mode in microsoft office planner web application", 
+    "version": "1.2", 
+    "description": "Dark mode for microsoft office planner web application", 
     "background": 
     {  
-        "scripts": ["jquery.min.js","background.js"]
+        "matches" : ["*://tasks.office.com/*"],
+        "scripts": ["background.js"]
     },
+    "content_scripts":[
+        {
+            "matches" : [ "*://tasks.office.com/*"],
+            "js" : ["jquery.min.js","theme_css.js"]
+        }
+    ],
     "icons": { 
         "16": "icon16.png",
         "48": "icon48.png",
@@ -14,8 +21,8 @@
     "browser_action": {
         "name": "Change Theme", 
         "default_icon": "icon128.png" ,
-        "default_title": "Apply Theme"
+        "default_title": "Toggle theme mode"
          },
-         "permissions": [ "https://tasks.office.com/*"]
+         "permissions": [ "*://tasks.office.com/*"]
 }
       
