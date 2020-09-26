@@ -154,6 +154,10 @@ $("body").append(`<style class='my-custom-dark-style'>
         }
         .theme-light .taskCard>.container>.contentAndLabels>.textContent>.topBar>.titleRow>.title {
             color: #ffffff;
+            font-weight: 500;
+        }
+        .theme-light .taskCard>.container>.contentAndLabels>.textContent>.topBar>.preview>.descriptionPreview {
+            color: #ffffff;
         }
         .topHeader>.nonIcon>div>.secondarySection>.pivotsSection>div.removable>.pivotLink.isSelected>.icon>.ms-Icon, .topHeader>.nonIcon>div>.secondarySection>.pivotsSection>div.removable>.pivotLink.isSelected>:not(.icon), .topHeader>.nonIcon>div>.secondarySection>.pivotsSection>div.removable>.pivotLink:hover>.icon>.ms-Icon, .topHeader>.nonIcon>div>.secondarySection>.pivotsSection>div.removable>.pivotLink:hover>:not(.icon) {
             border-bottom: 2px solid #ffffff;
@@ -324,9 +328,35 @@ $("body").append(`<style class='my-custom-dark-style'>
         .theme-light .taskEditor>.removeMargin>.title.completed>.edit input {
             color: #a7a7a7;
         }
+        .taskEditor>.removeMargin>.title {
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+            height: 3em;
+            background: #1e1e1e;
+            width: 36%;
+            z-index: 10;
+        }
         .theme-light .taskEditorDialog_dialog.ms-Dialog>.content>.ms-Dialog-main>.ms-Dialog-header>.ms-Dialog-topButton>.ms-Button {
             color: #000000;
         }
+        .taskEditorDialog_dialog.ms-Dialog>.content>.ms-Dialog-main
+        {
+            overflow-y: hidden;
+            max-height: 95vh;
+            border-radius: 1em;
+        }
+        .taskEditorDialog_categories
+        {
+            margin-top: 3em;
+        }
+        .taskEditorDialog_dialog.ms-Dialog>.content>.ms-Dialog-main .ms-Dialog-inner>.ms-Dialog-content
+        {
+            height: 88vh;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+        
         .theme-light .planHubPage>.full>.welcome {
             color: #ffffff;
         }
@@ -381,4 +411,27 @@ $("body").append(`<style class='my-custom-dark-style'>
         }
         .theme-light .checklistWrapper>ul>li>div>.checklistItemTitle {
             color: #b6b6b6;
-        }  </style>`);
+        }  
+        .o365cs-base .o365sx-activeButton {
+            color: #ffffff;
+            background-color: #131212;
+        }
+        .o365cs-base .o365sx-neutral-lighterAlt-background, .o365cs-base .o365sx-neutral-lighterAlt-hover-background:hover {
+            background-color: #383838;
+        }
+        .o365cs-base .o365sx-neutral-dark-font, .o365cs-base .o365sx-neutral-dark-hover-font:hover {
+            color: #ffffff;
+        }
+        .o365cs-base .o365sx-neutral-foreground-background, .o365cs-base .o365sx-neutral-foreground-hover-background:hover {
+            background-color: #4c4c4c;
+        }
+        .o365cs-base .o365sx-neutral-accent-link, .o365cs-base .o365sx-neutral-accent-link:hover, .o365cs-base .o365sx-neutral-accent-link:visited, .o365cs-base .o365sx-neutral-accent-hover-link:hover {
+            color: #42a8ff;
+        }
+        .o365cs-base .o365sx-neutral-lightAlt-border, .o365cs-base .o365sx-neutral-lightAlt-hover-border:hover {
+            border-color: #383838;
+        }
+        .o365cs-base .o365sx-neutral-accent-font, .o365cs-base .o365sx-neutral-accent-hover-font:hover {
+            color: #4aacff;
+        }
+        </style>`);
