@@ -1,4 +1,8 @@
 $("body").append(`<style class='my-custom-dark-style'>
+        .mectrl_header 
+        {
+            color: #fff;
+        }
         .appContent,.appContent .sideNav .plannerLeftNav,.appContent .sideNav .plannerLeftNav .content,body > div > div > div.appContent > div div > div.content
         {
             background-color: #272727;
@@ -145,6 +149,10 @@ $("body").append(`<style class='my-custom-dark-style'>
         .theme-light .sideNav>.footer:hover .leftNavItem,.theme-light .sideNav>.footer:hover .chevron 
         {
             color: black;
+        }
+        .taskBoardCard
+        {
+            box-shadow: 5px 12px 20px 0px #000000a6;
         }
         .theme-light .taskCard>.container {
             background-color: #727272;
@@ -316,6 +324,24 @@ $("body").append(`<style class='my-custom-dark-style'>
         .theme-light .taskCard>.container>.contentAndLabels>.textContent>.topBar>.planName {
             color: #ffffff;
         }
+        .theme-light .plannerApp>.appContent>.content a span
+        {
+            color: #ffffff;
+            text-shadow: 3px 3px 6px rgb(67 67 67);
+        }
+        .theme-light .taskCard>.container>.membersAndLabels>.bottomBar
+        {
+            background-color: #7f7f7f;
+            background: linear-gradient(180deg, #727272, #7e7e7e);
+        }
+        .theme-light .taskCard>.container>.membersAndLabels>.bottomBar:not(.readOnly):hover 
+        {
+            background-color: #f3f2f1 !important;
+            background: inherit;
+        }
+        .theme-light .taskCard>.container>.membersAndLabels>.bottomBar>.assignmentControl>.label>.ms-Persona>.ms-Persona-details>.ms-Persona-primaryText {
+            color: #1f1f1f;
+        }
         .checkbox-container>.toggleCheckLabel.checked {
             color: #4f6bed;
             background-image: radial-gradient(white,#4f6bed);
@@ -345,6 +371,15 @@ $("body").append(`<style class='my-custom-dark-style'>
             overflow-y: hidden;
             max-height: 95vh;
             border-radius: 1em;
+            box-shadow: 19px 20px 20px 0 rgb(0 0 0 / 23%), -1px 20px 20px 0 rgb(0 0 0 / 44%)
+        }
+        .theme-light .labelPicker .labelPickerInner .addLabel
+        {
+            color: #ffffff;
+        }
+        .theme-light .labelPicker:hover .labelPickerInner div.addLabel 
+        {
+            color: black;
         }
         .taskEditorDialog_categories
         {
@@ -433,5 +468,15 @@ $("body").append(`<style class='my-custom-dark-style'>
         }
         .o365cs-base .o365sx-neutral-accent-font, .o365cs-base .o365sx-neutral-accent-hover-font:hover {
             color: #4aacff;
+        }
+        .theme-light .contentCard>.title {
+            background-color: #424242;
+        }
+        .theme-light .noAccessErrorPage ::-webkit-scrollbar-thumb, .theme-light .plannerApp ::-webkit-scrollbar-thumb, .theme-light .plannerAppCallout ::-webkit-scrollbar-thumb, .theme-light .plannerAppDialog ::-webkit-scrollbar-thumb, .theme-light .sharepointApp ::-webkit-scrollbar-thumb, .theme-light .teamsApp ::-webkit-scrollbar-thumb, .theme-light .webpartApp ::-webkit-scrollbar-thumb {
+            background-color: #ffffffa6;
+        }
+        .theme-light .taskCard>.container:hover
+        {
+            transform: scale(1.02);
         }
         </style>`);
