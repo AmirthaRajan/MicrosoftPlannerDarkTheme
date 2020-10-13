@@ -150,7 +150,7 @@ $("body").append(`<style class='my-custom-dark-style'>
         {
             color: black;
         }
-        .taskBoardCard
+        .taskBoardCard:hover
         {
             box-shadow: 5px 12px 20px 0px #000000a6;
         }
