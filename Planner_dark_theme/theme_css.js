@@ -22,13 +22,12 @@ $("body").append(`<style class='my-custom-dark-style'>
         }
         .theme-light .plannerLeftNav {
             border-color: black;
+            background-color: #272727;
+            border-right: 0px;
         }
         .theme-light .sideNav 
         {
             border-color: black;
-        }
-        .theme-light .plannerLeftNav {
-            border-right: 0px;
         }
         .selected .leftNavItem
         {
@@ -43,6 +42,14 @@ $("body").append(`<style class='my-custom-dark-style'>
         }
         .theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>li>a>.linkContents>.outerPaddingRemove>.icon {
             color: #ffffff;
+        }
+        .theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>li.selected, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.list>li.selected, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>li.selected, .theme-light .plannerLeftNav>.content>ul>li.selected
+        {
+            background-color: #e2e2e2;
+        }
+        .theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>li.selected>a>.linkContents>.outerPaddingRemove>.icon
+        {
+            color: #000000;
         }
         .theme-light .topHeader>.nonIcon>div>.secondarySection>.pivotsSection>div>.pivotLink>.icon>button {
             color: #ffffff;
@@ -64,6 +71,16 @@ $("body").append(`<style class='my-custom-dark-style'>
         {
             background-color: #272727;
             color: white;   
+        }
+        .theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>.header>.groupButton, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.header>.groupButton, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.list>.header>.groupButton, .theme-light .plannerLeftNav>.content>ul>.header>.groupButton {
+            color: #ffffff;
+        }
+        .theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>.header:hover>.groupButton, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.header:hover>.groupButton, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.list>.header:hover>.groupButton, .theme-light .plannerLeftNav>.content>ul>.header:hover>.groupButton {
+            color:black;
+        }
+        .theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>.header:focus>.groupButton, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.header:focus>.groupButton, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.list>.header:focus>.groupButton, .theme-light .plannerLeftNav>.content>ul>.header:focus>.groupButton
+        {
+            color:black;
         }
         .theme-light .noAccessErrorPage ::-webkit-scrollbar-thumb, .theme-light .plannerApp ::-webkit-scrollbar-thumb, .theme-light .plannerAppCallout ::-webkit-scrollbar-thumb, .theme-light .plannerAppDialog ::-webkit-scrollbar-thumb, .theme-light .sharepointApp ::-webkit-scrollbar-thumb, .theme-light .teamsApp ::-webkit-scrollbar-thumb, .theme-light .webpartApp ::-webkit-scrollbar-thumb
         {
@@ -411,6 +428,10 @@ $("body").append(`<style class='my-custom-dark-style'>
         .planCard>.removeMargin>.planCardInternal>.cardHeader>.content>.bottomHalf>.textWrapper .fallbackContextInfoText, .planCard>.removeMargin>.planCardInternal>.cardHeader>.content>.bottomHalf>.textWrapper .planContext .ms-Breadcrumb-item {
             color: #bfbfbf;
         }
+        .theme-light .planCard
+        {
+            background-color: #2f2f2f94;
+        }
         .theme-light .planCard>.removeMargin>.planCardInternal>.cardHeader>.content>.topHalf>.textWrapper>.tileName {
             color: #ffffff;
         }
@@ -430,16 +451,6 @@ $("body").append(`<style class='my-custom-dark-style'>
         .planHubPage>.full>.mobileAppBanner
         {
             box-shadow: 6px 3px 20px 0 rgba(255, 255, 255, 0.18), 18px 20px 20px 0 rgba(255, 255, 255, 0.11);
-        }
-        .theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>.header>.groupButton, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.header>.groupButton, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.list>.header>.groupButton, .theme-light .plannerLeftNav>.content>ul>.header>.groupButton {
-            color: #ffffff;
-        }
-        .theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>.header:hover>.groupButton, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.header:hover>.groupButton, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.list>.header:hover>.groupButton, .theme-light .plannerLeftNav>.content>ul>.header:hover>.groupButton {
-            color:black;
-        }
-        .theme-light .plannerLeftNav>.content>.leftNavStaticLinksGroup>.header:focus>.groupButton, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.header:focus>.groupButton, .theme-light .plannerLeftNav>.content>div>.leftNavDynamicLinksGroup>.list>.header:focus>.groupButton, .theme-light .plannerLeftNav>.content>ul>.header:focus>.groupButton
-        {
-            color:black;
         }
         .documentPreviewIcon.genericIconColor {
             color: #000000;
