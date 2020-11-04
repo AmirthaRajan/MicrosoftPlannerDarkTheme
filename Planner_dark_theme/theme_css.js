@@ -429,7 +429,7 @@ $("body").append(`<style class='my-custom-dark-style'>
         .theme-light .planHubPage>.full>.header>.subHeader, .theme-light .planHubPage>.full>.pivotsContainer>.header>.subHeader {
             color: #ffffff;
         }
-        .highcharts-title,.highcharts-subtitle
+        .planCardInternal .highcharts-title,.planCardInternal .highcharts-subtitle
         {
             color: #ffffff !important;
             fill: #ffffff !important;
