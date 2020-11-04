@@ -371,14 +371,18 @@ $("body").append(`<style class='my-custom-dark-style'>
         .theme-light .taskEditor>.removeMargin>.title.completed>.edit input {
             color: #a7a7a7;
         }
-        .taskEditor>.removeMargin>.title {
+        .taskEditor>.removeMargin>.title 
+        {
             display: flex;
             flex-direction: row;
-            position: fixed;
-            height: 3em;
-            background: #1e1e1e;
-            width: 36%;
+            height: 4em;
+            background: #1e1e1eba;
+            width: 100%;
             z-index: 10;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding-top: 2%;
         }
         .theme-light .taskEditorDialog_dialog.ms-Dialog>.content>.ms-Dialog-main>.ms-Dialog-header>.ms-Dialog-topButton>.ms-Button {
             color: #000000;
@@ -423,6 +427,15 @@ $("body").append(`<style class='my-custom-dark-style'>
             color: #21c36a;
         }
         .theme-light .planHubPage>.full>.header>.subHeader, .theme-light .planHubPage>.full>.pivotsContainer>.header>.subHeader {
+            color: #ffffff;
+        }
+        .highcharts-title,.highcharts-subtitle
+        {
+            color: #ffffff !important;
+            fill: #ffffff !important;
+        }
+        .theme-light .planCard>.removeMargin>.planCardInternal>.rollupElement>.rollupLegend>.rollupSeries>.name
+        {
             color: #ffffff;
         }
         .planCard>.removeMargin>.planCardInternal>.cardHeader>.content>.bottomHalf>.textWrapper .fallbackContextInfoText, .planCard>.removeMargin>.planCardInternal>.cardHeader>.content>.bottomHalf>.textWrapper .planContext .ms-Breadcrumb-item {
