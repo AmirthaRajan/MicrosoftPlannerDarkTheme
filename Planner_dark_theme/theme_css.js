@@ -90,6 +90,10 @@ $("body").append(`<style class='my-custom-dark-style'>
         {
             color: white;
         }
+        .boardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>.columnTitle.readOnly,.boardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>button>.ms-Icon
+        {
+            color: black;
+        }
         .theme-light .boardColumn 
         {
             background-color: #383838;
@@ -119,7 +123,7 @@ $("body").append(`<style class='my-custom-dark-style'>
         {
             color: black;
         }
-        .primaryTextSectionTitle
+        .topHeader>.nonIcon>div .primarySection>.primaryTextSectionContainer>.primaryTextSection>button.primaryTextSectionTitle
         {
             color: white;
         }
@@ -140,12 +144,14 @@ $("body").append(`<style class='my-custom-dark-style'>
         .theme-light .boardColumn>div>.columnHeader>.addButtonContainer>.addButton {
             background-color: #4c4c4c;
         }
-        .theme-light .secondarySection>.sectionToggle {
-            color: white;
-        }
         .theme-light .secondarySection>.sectionToggle:hover
         {
             color:white;
+            background: hsl(0deg 0% 45%);
+        }
+        .theme-light .secondarySection>.sectionToggle 
+        {
+            color: black;
         }
         .sideNav>.content>.leftNavStaticLinksGroup>li>a>.linkContents:hover,.sideNav>.content>div>.leftNavDynamicLinksGroup>.list>li>a>.linkContents:hover,.sideNav>.content>div>.leftNavDynamicLinksGroup>li>a>.linkContents:hover,.sideNav>.content>ul>li>a>.linkContents:hover
         {
@@ -307,9 +313,6 @@ $("body").append(`<style class='my-custom-dark-style'>
         .theme-light .commentCard>.body>.header>.timestamp {
             color: #ffffff;
         }
-        .theme-light .ms-Dialog-main.plannerAppDialog .plannerAppDialogContents {
-            color: #ffffff;
-        }
         .theme-light .taskEditor>.removeMargin>.assignedToUsers>.assignmentControl:not(.readOnly):hover>.label>i {
             background-color: #ffffff;
             color: black;
@@ -327,10 +330,10 @@ $("body").append(`<style class='my-custom-dark-style'>
         .theme-light .contentCard>.title {
             color: #ffffff;
         }
-        .calendarView .fc-view-container .fc-body .fc-day-grid .fc-day-number
-        {
-            color: white;
-        }
+        // .calendarView .fc-view-container .fc-body .fc-day-grid .fc-day-number
+        // {
+        //     color: white;
+        // }
         .theme-light .taskCard>.container>.contentAndLabels>.textContent>.topBar>.preview>.checklistPreview.rounded .checklistItem .ms-Checkbox .ms-Checkbox-label>span
         {
             color: #dadada;
