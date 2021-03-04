@@ -131,6 +131,10 @@ $("body").append(`<style class='my-custom-dark-style'>
         {
             color: white;
         }
+        .ms-Layer.ms-Layer--fixed .ms-Dialog-main.taskEditor-dialog-container .taskEditor-dialog-content .assignedToUsers .ms-Persona-details .ms-Persona-primaryText .ms-TooltipHost
+        {
+            color: white;
+        }
         #planner-main-content .nonIcon .secondarySection .pivotLink span
         {
             color: white;
@@ -210,7 +214,18 @@ $("body").append(`<style class='my-custom-dark-style'>
             color: #000000;
         }
         .theme-light .taskCard>.container>.contentAndLabels>.textContent>.thumbnail.placeholder {
-            background-color: #ececec;
+            background-color: #373737;
+        }
+        .documentPreviewIcon.excelIconColor {
+            color: #239323;
+            background-color: #373737;
+        }
+        .referencePreviewDescription .documentPreviewIcon.excelIconColor {
+            background-color: #727272;
+        }
+        .toggleFavoriteIcon>span>.ms-Icon
+        {
+            color: #d5d52c;
         }
         .documentPreviewIcon.genericIconColor {
             color: #ffffff;
@@ -226,24 +241,17 @@ $("body").append(`<style class='my-custom-dark-style'>
         .theme-light .taskCard>.container>.membersAndLabels>.bottomBar>.assignmentControl>.label .ms-Icon--AddFriend {
             color: #000000;
         }
+        .ms-Dialog-main.taskEditor-dialog-container div.taskEditor-dialog-content .assignedToUsers .assignmentControl i
+        {
+            color:#ffffff;
+        }
         .theme-light .taskCard>.container>.contentAndLabels>.textContent>.topBar>.indicatorRow {
             color: #ffffff;
         }
         .theme-light .color-inprogress {
             color: #80ce82;
         }
-        .documentPreviewIcon.excelIconColor {
-            color: #239323;
-            background-color: #ececec;
-        }
-        .theme-light .ms-Dialog-main.plannerAppDialog {
-            background-color: #0000007a;
-        }
-        .theme-light .ms-Dialog-main.plannerAppDialog {
-            background-color: #ffffff7a;
-            border-radius: 2em;
-        }
-        .theme-light .ms-Dialog-main.plannerAppDialog .plannerAppDialogContents {
+        .theme-light .ms-Modal.taskEditor-dialog.plannerAppDialog .taskEditor-dialog-container {
             background-color: #000000cf;
             border-radius: 1em;
         }
@@ -327,6 +335,14 @@ $("body").append(`<style class='my-custom-dark-style'>
             margin-left: 10px;
             background-color: #ffffffb3;
         }
+        .ms-Dialog-main.taskEditor-dialog-container div.taskEditor-dialog-content div.checklist.rounded div.checklistWrapper input::placeholder
+        {
+            color:white;
+        }
+       .ms-Dialog-main.taskEditor-dialog-container div.taskEditor-dialog-content div.assignedToUsers span.assignLabel
+        {
+            color:white;
+        }
         .theme-light .contentCard>.title {
             color: #ffffff;
         }
@@ -396,6 +412,10 @@ $("body").append(`<style class='my-custom-dark-style'>
             max-height: 95vh;
             border-radius: 1em;
             box-shadow: 19px 20px 20px 0 rgb(0 0 0 / 23%), -1px 20px 20px 0 rgb(0 0 0 / 44%)
+        }
+        .labelPickerArea i 
+        {
+            color:white;
         }
         .theme-light .labelPicker .labelPickerInner .addLabel
         {
@@ -473,6 +493,10 @@ $("body").append(`<style class='my-custom-dark-style'>
         }
         .theme-light .checklistWrapper>ul>li>div>.checklistItemTitle {
             color: #b6b6b6;
+        }
+        .theme-light .checklistWrapper>ul>li>div>.checklistItemTitle:hover
+        {
+            color: #424242;
         }  
         .o365cs-base .o365sx-activeButton {
             color: #ffffff;
