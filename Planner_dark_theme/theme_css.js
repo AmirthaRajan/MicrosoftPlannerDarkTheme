@@ -227,6 +227,18 @@ $("body").append(`<style class='my-custom-dark-style'>
         {
             color: #d5d52c;
         }
+        .attachmentRow>.content>.item-list-title>.item-list-text
+        {
+            color:#ffffff;
+        }
+        .theme-light .taskEditor>.removeMargin>.checklist>.checklistInfo .checklistDetails span
+        {
+            color:#ffffff;
+        }
+        .taskEditor>.removeMargin>.attachments > label.ms-label
+        {
+            color:#ffffff;
+        }
         .documentPreviewIcon.genericIconColor {
             color: #ffffff;
         }
@@ -334,6 +346,10 @@ $("body").append(`<style class='my-custom-dark-style'>
         .ms-Dialog-main .ms-Dialog-inner .checklist.rounded .ms-TextField.isTextStyle>.ms-TextField-wrapper>div>input {
             margin-left: 10px;
             background-color: #ffffffb3;
+        }
+        .theme-light .ms-Dialog-main.plannerAppDialog .plannerAppDialogContents
+        {
+            background-color: inherit;
         }
         .ms-Dialog-main.taskEditor-dialog-container div.taskEditor-dialog-content div.checklist.rounded div.checklistWrapper input::placeholder
         {
