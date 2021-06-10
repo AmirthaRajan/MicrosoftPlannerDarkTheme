@@ -11,7 +11,8 @@
     "content_scripts":[
         {
             "matches" : [ "*://tasks.office.com/*"],
-            "js" : ["jquery.min.js","theme_css.js"]
+            "js" : ["jquery.min.js","delay_load.js"],
+            "run_at": "document_end"
         }
     ],
     "icons": { 

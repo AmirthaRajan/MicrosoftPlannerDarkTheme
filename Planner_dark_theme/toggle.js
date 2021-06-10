@@ -1,7 +1,4 @@
-var elem =  document.getElementsByClassName("my-custom-dark-style");
-if(elem !== undefined && elem !== null)
+while(document.getElementById("my-custom-dark-style"))
 {
-    Array.prototype.forEach.call(elem, ele => {
-        ele.parentElement.removeChild(ele);    
-    });    
+    document.getElementById("my-custom-dark-style").remove()
 }
