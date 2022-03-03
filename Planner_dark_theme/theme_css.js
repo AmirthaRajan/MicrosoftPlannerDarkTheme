@@ -32,7 +32,11 @@ $("body").append(`<style id='my-custom-dark-style'>
             {
                 border-color: black;
             }
-            .selected .leftNavItem
+            .css-56 .leftNavItem
+            {
+                color: white;
+            }
+            .css-56:hover .leftNavItem
             {
                 color: black;
             }
@@ -89,15 +93,15 @@ $("body").append(`<style id='my-custom-dark-style'>
             {
                 background-color: #d6d4d1;
             }
-            .taskBoardView.boardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>.columnTitle>h3 
+            .taskBoardView.taskBoardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>.columnTitle>h3 
             {
                 color: white;
             }
-            .boardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>.columnTitle.readOnly,.boardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>button>.ms-Icon
+            .taskBoardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>.columnTitle.readOnly,.taskBoardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>button>.ms-Icon
             {
                 color: black;
             }
-            .theme-light .boardColumn 
+            .theme-light .taskBoardColumn 
             {
                 background-color: #383838;
             }
@@ -113,10 +117,6 @@ $("body").append(`<style id='my-custom-dark-style'>
             }
             .theme-light .topHeader .dropdownMenu>.ms-Label>.value {
                 color: #ffffff;
-            }
-            .leftNavItem
-            {
-                color: white;
             }
             h3.headerText 
             {
@@ -142,13 +142,13 @@ $("body").append(`<style id='my-custom-dark-style'>
             {
                 color: white;
             }
-            .theme-light .boardColumn>div>.columnHeader>.addButtonContainer>.addButton {
+            .theme-light .taskBoardColumn>div>.columnHeader>.addButtonContainer>.addButton {
                 color: white;
             }
-            .theme-light .boardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection {
+            .theme-light .taskBoardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection {
                 color: #ffffff;
             }
-            .theme-light .boardColumn>div>.columnHeader>.addButtonContainer>.addButton {
+            .theme-light .taskBoardColumn>div>.columnHeader>.addButtonContainer>.addButton {
                 background-color: #4c4c4c;
             }
             .theme-light .secondarySection>.sectionToggle:hover
@@ -187,14 +187,14 @@ $("body").append(`<style id='my-custom-dark-style'>
             .theme-light .taskCard>.container {
                 background-color: #727272;
             }
-            .theme-light .taskCard>.container>.contentAndLabels>.textContent>.taskMenuSection {
+            .theme-light .taskCard>.container>.textContent>.taskMenuSection {
                 color: #000000;
             }
-            .theme-light .taskCard>.container>.contentAndLabels>.textContent>.topBar>.titleRow>.title {
+            .theme-light .taskCard>.container>.textContent>.topBar>.titleRow>.title {
                 color: #ffffff;
                 font-weight: 500;
             }
-            .theme-light .taskCard>.container>.contentAndLabels>.textContent>.topBar>.preview>.descriptionPreview {
+            .theme-light .taskCard>.container>.textContent>.topBar>.preview>.descriptionPreview {
                 color: #ffffff;
             }
             .topHeader>.nonIcon>div>.secondarySection>.pivotsSection>div.removable>.pivotLink.isSelected>.icon>.ms-Icon, .topHeader>.nonIcon>div>.secondarySection>.pivotsSection>div.removable>.pivotLink.isSelected>:not(.icon), .topHeader>.nonIcon>div>.secondarySection>.pivotsSection>div.removable>.pivotLink:hover>.icon>.ms-Icon, .topHeader>.nonIcon>div>.secondarySection>.pivotsSection>div.removable>.pivotLink:hover>:not(.icon) {
@@ -209,14 +209,14 @@ $("body").append(`<style id='my-custom-dark-style'>
             {
                 color:white;
             }
-            .theme-light .boardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>.columnTitle.addColumn
+            .theme-light .taskBoardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>.columnTitle.addColumn
             {
                 color:white;
             }
             .checkbox-container:hover .completeButtonIcon {
                 color: #000000;
             }
-            .theme-light .taskCard>.container>.contentAndLabels>.textContent>.thumbnail.placeholder {
+            .theme-light .taskCard>.container>.textContent>.thumbnail.placeholder {
                 background-color: #373737;
             }
             .documentPreviewIcon.excelIconColor {
@@ -234,6 +234,10 @@ $("body").append(`<style id='my-custom-dark-style'>
             {
                 color:#ffffff;
             }
+            .theme-light .attachment.indicator .indicator-wrapper .ms-Button-flexContainer .ms-Button-icon, .theme-light .indicator .indicator-wrapper .ms-Button-flexContainer .ms-Button-textContainer .ms-Button-label
+            {
+                color:#ffffff;
+            }
             .theme-light .taskEditor>.removeMargin>.checklist>.checklistInfo .checklistDetails span
             {
                 color:#ffffff;
@@ -245,7 +249,7 @@ $("body").append(`<style id='my-custom-dark-style'>
             .documentPreviewIcon.genericIconColor {
                 color: #ffffff;
             }
-            .theme-light .noAccessErrorPage a, .theme-light .plannerApp>.appContent>.content a, .theme-light .plannerAppCallout a, .theme-light .plannerAppDialog a, .theme-light .sharepointApp a, .theme-light .teamsApp a, .theme-light .webpartApp a {
+            .theme-light .noAccessErrorPage a, .theme-light .plannerApp>.appContent>.content a .dayCell span, .theme-light .plannerAppCallout a, .theme-light .plannerAppDialog a, .theme-light .sharepointApp a, .theme-light .teamsApp a, .theme-light .webpartApp a {
                 color: #000000;
                 text-shadow: none;
             }
@@ -253,14 +257,14 @@ $("body").append(`<style id='my-custom-dark-style'>
             {
                 color: white;
             }
-            .theme-light .taskCard>.container>.membersAndLabels>.bottomBar>.assignmentControl>.label .ms-Icon--AddFriend {
+            .theme-light .taskCard>.container>.textContent>.bottomBar>.assignmentControl>.label .ms-Icon--AddFriend {
                 color: #000000;
             }
             .ms-Dialog-main.taskEditor-dialog-container div.taskEditor-dialog-content .assignedToUsers .assignmentControl i
             {
                 color:#ffffff;
             }
-            .theme-light .taskCard>.container>.contentAndLabels>.textContent>.topBar>.indicatorRow {
+            .theme-light .taskCard>.container>.textContent>.topBar>.indicatorRow {
                 color: #ffffff;
             }
             .theme-light .color-inprogress {
@@ -369,14 +373,14 @@ $("body").append(`<style id='my-custom-dark-style'>
             // {
             //     color: white;
             // }
-            .theme-light .taskCard>.container>.contentAndLabels>.textContent>.topBar>.preview>.checklistPreview.rounded .checklistItem .ms-Checkbox .ms-Checkbox-label>span
+            .theme-light .taskCard>.container>.textContent>.topBar>.preview>.checklistPreview.rounded .checklistItem .ms-Checkbox .ms-Checkbox-label>span
             {
                 color: #dadada;
             }
             .theme-light .taskCard.complete>.container>.contentAndLabels>.textContent>.topBar>.titleRow>.title {
                 color: #c3c3c3;
             }
-            .theme-light .taskCard>.container>.contentAndLabels>.textContent>.topBar>.planName {
+            .theme-light .taskCard>.container>.textContent>.topBar>.planName {
                 color: #ffffff;
             }
             .theme-light .plannerApp>.appContent>.content a span
@@ -384,20 +388,20 @@ $("body").append(`<style id='my-custom-dark-style'>
                 color: #ffffff;
                 text-shadow: 3px 3px 6px rgb(67 67 67);
             }
-            .theme-light .taskCard>.container>.membersAndLabels>.bottomBar
+            .theme-light .taskCard>.container>.textContent>.bottomBar
             {
                 background-color: #7f7f7f;
                 background: linear-gradient(180deg, #727272, #7e7e7e);
             }
-            .theme-light .taskCard>.container>.membersAndLabels>.bottomBar:not(.readOnly):hover 
+            .theme-light .taskCard>.container>.textContent>.bottomBar:not(.readOnly):hover 
             {
                 background-color: #f3f2f1 !important;
                 background: inherit;
             }
-            .theme-light .taskCard>.container>.membersAndLabels>.bottomBar>.assignmentControl>.label>.ms-Persona>.ms-Persona-details>.ms-Persona-primaryText {
+            .theme-light .taskCard>.container>.textContent>.bottomBar>.assignmentControl>.label>.ms-Persona>.ms-Persona-details>.ms-Persona-primaryText {
                 color: white;
             }
-            .theme-light .taskCard>.container>.membersAndLabels>.bottomBar>.assignmentControl>.label>.ms-Persona:hover>.ms-Persona-details>.ms-Persona-primaryText{
+            .theme-light .taskCard>.container>.textContent>.bottomBar>.assignmentControl>.label>.ms-Persona:hover>.ms-Persona-details>.ms-Persona-primaryText{
                 color: black;
             }
             .checkbox-container>.toggleCheckLabel.checked {
@@ -513,13 +517,14 @@ $("body").append(`<style id='my-custom-dark-style'>
             .documentPreviewIcon.genericIconColor {
                 color: #000000;
             }
-            .theme-light .checklistWrapper>ul>li>div>.checklistItemTitle {
+            .theme-light .checklist ul.dndList>li.checklistItem>.dndListItem>.listItemContents>.checklistItemTitle {
                 color: #b6b6b6;
             }
-            .theme-light .checklistWrapper>ul>li>div>.checklistItemTitle:hover
+            .theme-light .checklist ul.dndList>li.checklistItem>.dndListItem>.listItemContents>.checklistItemTitle:hover
             {
                 color: #424242;
-            }  
+            }
+
             .o365cs-base .o365sx-activeButton {
                 color: #ffffff;
                 background-color: #131212;
@@ -552,9 +557,9 @@ $("body").append(`<style id='my-custom-dark-style'>
             {
                 transform: scale(1.02);
             }
-            .boardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>.columnTitle.readOnly, .boardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>button>.ms-Icon
+            .taskBoardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>.columnTitle.readOnly, .taskBoardColumn>div>.columnHeader>.columnHeaderTitle>.titleSection>button>.ms-Icon
             {
-                color:white;
+                color:#000;
             }
             .suggestions-file-container
             {

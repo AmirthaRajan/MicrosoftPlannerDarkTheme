@@ -1,7 +1,7 @@
 { 
     "name": "Dark Theme for Planner Web App", 
     "manifest_version": 2,
-    "version": "2.3", 
+    "version": "2.4", 
     "description": "Dark mode for planner web application", 
     "background": 
     {  
